@@ -1,0 +1,4 @@
+<plugin>
+  <name>Stambecco</name>
+  <classname>org.stambecco.plugin.TemplatePlugin</classname>
+</plugin>

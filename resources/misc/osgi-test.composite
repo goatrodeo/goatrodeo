@@ -1,0 +1,22 @@
+scan-bundle:wrap:mvn:com.thoughtworks.paranamer/paranamer/2.0
+scan-bundle:wrap:mvn:javax.mail/mail/1.4
+scan-bundle:wrap:mvn:javax.activation/activation/1.1
+scan-bundle:wrap:mvn:commons-httpclient/commons-httpclient/3.1
+scan-bundle:mvn:commons-fileupload/commons-fileupload/1.2.1
+scan-bundle:mvn:commons-collections/commons-collections/3.2.1
+scan-bundle:wrap:mvn:commons-codec/commons-codec/1.3
+# required by commons-fileupload
+scan-bundle:wrap:mvn:commons-io/commons-io/1.3.2
+
+scan-bundle:wrap:mvn:org.scala-lang/scala-library/2.8.0.Beta1
+
+scan-bundle:mvn:net.liftweb/lift-actor/2.0-scala280-SNAPSHOT@update
+scan-bundle:mvn:net.liftweb/lift-common/2.0-scala280-SNAPSHOT@update
+scan-bundle:mvn:net.liftweb/lift-json/2.0-scala280-SNAPSHOT@update
+scan-bundle:mvn:net.liftweb/lift-mapper/2.0-scala280-SNAPSHOT@update
+scan-bundle:mvn:net.liftweb/lift-util/2.0-scala280-SNAPSHOT@update
+scan-bundle:mvn:net.liftweb/lift-webkit/2.0-scala280-SNAPSHOT@update
+
+scan-bundle:wrap:mvn:com.rabbitmq/amqp-client/1.7.2
+
+scan-bundle:wrap:mvn:org.stambecco/stambecco-core/LATEST

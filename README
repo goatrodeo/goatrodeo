@@ -1,0 +1,2 @@
+Goat Rodeo is a Scala-based transactional system that shares semantics between in-memory, RDBMS persisted, and
+cloud persisted systems.
