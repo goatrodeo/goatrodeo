@@ -22,6 +22,7 @@ package internal
 import java.sql.Savepoint
 import java.sql.{Connection, Array => JdbcArray}
 import java.util.Properties
+import java.util.concurrent.Executor
 
 private[stambecco] class ConnectionWrapper(what: Connection) extends Connection {
   def clearWarnings() = what.clearWarnings()
@@ -118,4 +119,20 @@ private[stambecco] class ConnectionWrapper(what: Connection) extends Connection 
 
   def isWrapperFor(iface: Class[_]) = iface.isAssignableFrom(what.getClass)
   def unwrap[T](iface: Class[T]): T = what.asInstanceOf[T]
+
+  def abort(executor: Executor) {
+    what.abort(executor)
+  }
+
+  def getNetworkTimeout = what.getNetworkTimeout
+
+  def getSchema = what.getSchema
+
+  def setNetworkTimeout(executor: Executor, milliseconds: Int) {
+    what.setNetworkTimeout(executor, milliseconds)
+  }
+
+  def setSchema(schema: String) {
+    what.setSchema(schema)
+  }
 }
